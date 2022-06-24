@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'poppins', sans-serif;
+			font-family: "Monserrat", sans-serif;
+  background-image: url(https://th.bing.com/th/id/OIP.B3EQhrzHPGIdVR16t8xg_gHaEK?w=281&h=180&c=7&r=0&o=5&pid=1.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin left: 500px;
+		}
+		.container{
+			width: 25%;
+			height: 25vh;
+			background-image: linear-gradient(to right, #ff4b4b, #d12280 );
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.sidenav{
+			height: 100%;
+			width: 200px;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: lightblue;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+		.sidenav a{
+			padding: 6px 6px 6px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			display: block;
+		}
+		.sidenav a:hover{
+			color: orange;
+		}
+		.main{
+			margin-left: 200px;
+			width: 800px;
+			height: 700px;
+
+			margin: 30px auto;
+		}
+		h1{
+			font-size: 70px;
+			color: white;
+			text-align: center;
+			border-bottom: 2px solid white;
+		}
+		table{
+			font-size: 30px;
+		}
+		td{
+         padding: 10px 20px 0px 0px;
+		}
+		.txt{
+			width: 400px;
+			height: 50px;
+			border-radius: 8px;
+		}
+		.txtarea{
+			width: 830px;
+			height: 150px;
+			border-radius: 8px;
+		}
+		.btn{
+					width: 830px;
+			height: 50px;
+			background-color: royalblue;
+			border-radius: 8px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+		<body>
+			<div class="sidenav">
+	<a href="index.html">Cancun introduction</a>
+		<a href="ruins.html">Ruins</a>
+			<a href="parks.html">Parks</a>
+				<a href="#">Feedback</a></div>
+			<div class="main">
+				<table>
+					<form action="" method="post">
+						<h1>Feedback form</h1>
+						<tr>
+							<td colspan="2"><label>How do you rate your overall experience</label>
+								<br>
+								<input type="radio" name="rate" value="bad">Bad
+							    <input type="radio" name="rate" value="average">aVerage
+						<input type="radio" name="rate" value="Good">Good
+                            </td>
+                        </tr>
+				  <tr>
+				  	    <td>
+				  		<label>Full name</label>
+				  		<br/>
+				  		<input type="text"  required name="fullname" placeholder="Full name" class="txt">
+                        </td>
+                        <td>
+				  		<label>Email</label>
+				  		<br/>
+				  		<input type="Email" name="Email" placeholder="Email" class="txt" required>
+                        </td>
+				  </tr>
+				  <tr>
+				  	    <td>
+				  		<label>Age</label>
+				  		<br/>
+				  		<input type="text" name="Age" placeholder="Age" class="txt" required>
+                        </td>
+                        <td>
+				  		<label>Phone</label>
+				  		<br/>
+				  		<input type="text" required  name="phone" placeholder="phone" class="txt">
+                        </td>
+				  </tr>
+				  <tr>
+				  	<td colspan="2">
+				  		<label>Message</label><br/>
+				  		<textarea class="txtarea"></textarea>
+				  	</td>
+				  </tr>
+				  <tr>
+				  	<td colspan="2">
+				  		<button type="submit" class="btn">Submit</button>
+				  	</td>
+				  </tr>
+				    </form>
+			    </table>
+            </body>
+</html>
+
